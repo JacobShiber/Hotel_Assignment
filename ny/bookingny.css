@@ -129,149 +129,44 @@ body {
 
 @keyframes  runningimg {
     0% {
-        background: url(Media/lalobby.jpg);
+        background: url(Media/nyhotel.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
     50% {
-        background: url(Media/lvlobby.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    100% {
         background: url(Media/nylobby.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
+    100% {
+        background: url(Media/luxurysuit.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
-
-#maincontent {
-    width: 90%;
-    height: 750px;
-    background: rgb(245, 245, 245, 0.7);
-    margin-left: 5vw;
+#bookingform {
+    width: 80%;
+    background: url(./Media/formbgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid var(--main-gold);
+    margin-left: 8%;
 }
 
-#maincontent h1 {
+#bookingform h1 {
+    margin-bottom: 30px;
     font-family: var(--header-font);
-    font-size: 50px;
-    margin-left: 30px;
-    margin-top: 40px;
-    border-bottom: 1px solid black;
-    width: 300px;  
-    text-shadow: 2px 2px 2px var(--main-gold);
+    font-size: 60px;
 }
 
-#maincontent #branches {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 20%;
-    margin-top: 5%;
-    justify-content: space-evenly;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-}
-
-#maincontent .branch img {
-    width: 100%;
-    height: 60%;
-    box-shadow: 2px 2px 2px black;
-}
-
-.branch h2 {
-    font-family: var(--header-font);
-    margin-top: 5px;
-    font-size: 30px;
-    font-weight: bolder;
-    border-bottom: 2px solid black;
-    text-shadow: 2px 2px 2px var(--main-gold);
-}
-
-#maincontent .branch {
-    transition: 1s;
-}
-
-#maincontent .branch:hover {
-    transform: scale(110%);
-}
-
-.branch p {
-    font-size: 19px;
-}
-
-#mainevents {
-    width: 90%;
-    height: 1100px;
-    background: rgb(245, 245, 245, 0.7);
-    margin-left: 5vw;
-    margin-top: 2%;
-}
-
-#mainevents #eventcards {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#mainevents h1 {
-    font-family: var(--header-font);
-    font-size: 50px;
-    margin-left: 30px;
-    margin-top: 40px;
-    border-bottom: 1px solid black;
-    width: 425px;  
-    text-shadow: 2px 2px 2px var(--main-gold);
-}
-
-#mainevents .eventcard {
-    width: 75%;
-    margin-top: 5%;
-    margin-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#mainevents .eventcard img {
-    width: 30%;
-    height: 100%;
-    box-shadow: 3px 3px 3px black;
-}
-
-#mainevents .eventcard h2 {
-    font-family: var(--header-font);
-    text-shadow: 2px 2px 2px var(--main-gold);
-    margin-top: 10px;
-    
-    width: 500px;
-    
-}
-
-#mainevents .eventcard p {
-    font-size: 19px;
-    width: 600px;
-    margin-top: 5px;
-}
-
-.carddetail {
-    font-size: 15px;
-    margin-top: 5px;
-    
-}
-
-#cardtext {
-    width: 50%;
-}
-
-.booklinks {
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-.booklinks:hover {
+#bookingform form {
+    padding: 5%;
     font-size: 25px;
+    color: var(--main-gold);
+    text-align: center;
+    margin-top: 20px;
 }
