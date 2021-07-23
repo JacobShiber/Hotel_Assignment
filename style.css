@@ -36,6 +36,15 @@ body {
     background: black;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+}
+#stickynav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: black;
+    height: 40px;
+    z-index: 100;
 }
 
 #logo #logoimg {
@@ -65,7 +74,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     height: 100%;
-
+    align-content: flex-end;
 }
 
 #navlinks .navlink {
@@ -115,6 +124,7 @@ body {
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-play-state: running;
+    box-shadow: 3px 3px 3px 3px black;
 }
 
 @keyframes  runningimg {
@@ -141,11 +151,9 @@ body {
 
 #maincontent {
     width: 90%;
-    height: 1200px;
+    height: 750px;
     background: rgb(245, 245, 245, 0.7);
     margin-left: 5vw;
-    /* position: relative; */
-    /* top: -40px; */ 
 }
 
 #maincontent h1 {
@@ -195,3 +203,67 @@ body {
 .branch p {
     font-size: 19px;
 }
+
+#mainevents {
+    width: 90%;
+    height: 1100px;
+    background: rgb(245, 245, 245, 0.7);
+    margin-left: 5vw;
+    margin-top: 2%;
+}
+
+#mainevents #eventcards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainevents h1 {
+    font-family: var(--header-font);
+    font-size: 50px;
+    margin-left: 30px;
+    margin-top: 40px;
+    border-bottom: 1px solid black;
+    width: 425px;  
+    text-shadow: 2px 2px 2px var(--main-gold);
+}
+
+#mainevents .eventcard {
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#mainevents .eventcard img {
+    width: 30%;
+    height: 100%;
+    box-shadow: 3px 3px 3px black;
+}
+
+#mainevents .eventcard h2 {
+    font-family: var(--header-font);
+    text-shadow: 2px 2px 2px var(--main-gold);
+    margin-top: 10px;
+    
+    width: 500px;
+    
+}
+
+#mainevents .eventcard p {
+    font-size: 19px;
+    width: 600px;
+    margin-top: 5px;
+}
+
+.carddetail {
+    font-size: 15px;
+    margin-top: 5px;
+    
+}
+
+#cardtext {
+    width: 50%;
+}
+
