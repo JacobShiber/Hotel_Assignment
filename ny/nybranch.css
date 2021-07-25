@@ -268,3 +268,27 @@ body {
 .booklinks:hover {
     font-size: 25px;
 }
+
+#bookingform {
+    width: 80%;
+    background: url(./Media/formbgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid var(--main-gold);
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+#bookingform h1 {
+    margin-bottom: 30px;
+    font-family: var(--header-font);
+    font-size: 60px;
+}
+
+#bookingform form {
+    padding: 5%;
+    font-size: 25px;
+    color: var(--main-gold);
+    text-align: center;
+    margin-top: 20px;
+}

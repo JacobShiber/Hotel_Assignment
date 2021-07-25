@@ -24,10 +24,10 @@
             <nav>
                 <ul id="navlinks">
                     <li class="navlink"><a href="index.html">Home</a></li>
-                    <li class="navlink"><a href="lv/lvbranch.html" target="blank">Las Vegas</a></li>
-                    <li class="navlink"><a href="la/labranch.html" target="blank">Los Angeles</a></li>
-                    <li class="navlink"><a href="ny/nybranch.html" target="blank">New York</a></li>
-                    <li class="navlink"><a href="booking.html" target="blank">Booking</a></li>
+                    <li class="navlink"><a href="lv/lvbranch.html">Las Vegas</a></li>
+                    <li class="navlink"><a href="la/labranch.html">Los Angeles</a></li>
+                    <li class="navlink"><a href="ny/nybranch.html">New York</a></li>
+                    <li class="navlink"><a href="booking.html">Booking</a></li>
                     <li class="navlink"><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -42,28 +42,28 @@
                    <h1>Our Branches</h1>
                 <article id="branches">
                        
-                         <div class="branch">
+                         <div class="branch"><a href="la/labranch.html" class="branchlink">
                              <img src="Media/lahotel.jpg" alt="la hotel">
                              <h2>Los Angeles Branch</h2><br>
                              <p>The Redeon Hotel Los Angeles welcomes you with intelligent design and a consummate eye for detail, effortlessly blending graceful European Style with a distinctly modern feel.
                                 <br><br><br><br><hr><br><span class="minides">Location: 2130 East Maple Avenue, El Segundo, California</span>
-                             </p>
+                             </p></a>
                          </div>
-                         <div class="branch">
+                         <div class="branch"><a href="lv/lvbranch.html" class="branchlink">
                             <img src="./Media/lvhotel.jpg" alt="lv hotel">
                             <h2>Las Vegas Branch</h2><br>
                             <p>
                                 Immerse yourself in upscale cuisine and laid-back luxury. This stylish indulgence combines traditional Japanese and modern styles. At Redeon Hotel Las Vegas branch you can explore a curated, highly-personalized experience.
                                 <br><br><hr><br><span class="minides">Location: 3355 S Las Vegas Blvd, Las Vegas, NV 89109</span>
-                            </p>
+                            </p></a>
                          </div>
-                         <div class="branch">
+                         <div class="branch"><a href="ny/nybranch.html" class="branchlink">
                             <img src="Media/nyhotel.jpg" alt="ny hotel">
                             <h2>New York Branch</h2><br>
                             <p>
                                 The Redeon New York branch is an iconic 19th-century lodging offering fine dining & afternoon tea, plus a champagne bar & a spa.
                                 <br><br><br><br><br><hr><br><span class="minides">Location: 5th Avenue at, Central Park S, New York, NY 10022</span>
-                            </p>
+                            </p></a>
                          </div>
                    </article>
             </section>
@@ -125,6 +125,36 @@
                     </div>
                 </div>
                </article> 
+            </section>
+
+            <section id="bookingform">
+                <form>
+                    <h1>Booking</h1>
+                    <label for="firstname">First Name:</label><br>
+                    <input type="text" name="firstname" required placeholder="First Name"><br>
+                    <label for="lastname">Last Name:</label><br>
+                    <input type="text" name="lastname" required placeholder="Last Name"><br>
+                    <label for="checkin">Check-in:</label><br>
+                    <input type="date" name="checkin" required><br>
+                    <label for="checkout">Check-out:</label><br>
+                    <input type="date" name="checkout" required><br>
+                    <label for="branch">Branch:</label><br>
+                    <select name="branch" id="branch">
+                        <option value="los angeles">Los Angeles</option>
+                        <option value="las vegas">Las Vegas</option>
+                        <option value="new york">New York</option>
+                    </select><br>
+                    <label for="events">Events:</label><br>
+                    <select name="events" id="events">
+                        <option value="no event">None</option>
+                        <option value="wine&dine">Wine & Dine</option>
+                        <option value="pool party">LA Pool Party</option>
+                        <option value="reef diving">LA Reef Diving</option>
+                        <option value="lv casino">LV Casino Rumble</option>
+                    </select><br>
+                    <input type="submit">
+                    <input type="reset">
+                </form>
             </section>
         </main>
         <footer></footer>

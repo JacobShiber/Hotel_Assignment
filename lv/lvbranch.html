@@ -89,6 +89,33 @@
                       </div>
                 </article>
          </section>
+         <section id="bookingform">
+            <form>
+                <h1>Booking</h1>
+                <label for="firstname">First Name:</label><br>
+                <input type="text" name="firstname" required placeholder="First Name"><br>
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" name="lastname" required placeholder="Last Name"><br>
+                <label for="checkin">Check-in:</label><br>
+                <input type="date" name="checkin" required><br>
+                <label for="checkout">Check-out:</label><br>
+                <input type="date" name="checkout" required><br>
+                <label for="room">Room:</label><br>
+                <select name="room" id="room">
+                    <option value="royalty suit">Royalty Suit</option>
+                    <option value="luxury room">Luxury Room</option>
+                    
+                </select><br>
+                <label for="events">Events:</label><br>
+                <select name="events" id="events">
+                    <option value="no event">None</option>
+                    <option value="wine&dine">Casino Rumble</option>
+                    
+                </select><br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </section>
         </main>
 </body>
 </html>

@@ -83,13 +83,14 @@ body {
     list-style: none;
     border-left: 1px solid var(--main-gold);
     padding-left: 10px;
+    height: 30px;
 }
 
 #navlinks .navlink a {
     text-decoration: none;
     color: var(--main-gold);
     text-shadow: 1px 1px 1px var(--second-gold);
-    transition: 1s;
+    transition: 1.5s;
 }
 
 #navlinks .navlink:first-child {
@@ -274,4 +275,33 @@ body {
 
 .booklinks:hover {
     font-size: 25px;
+}
+
+#bookingform {
+    width: 80%;
+    background: url(./Media/formbgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid var(--main-gold);
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+#bookingform h1 {
+    margin-bottom: 30px;
+    font-family: var(--header-font);
+    font-size: 60px;
+}
+
+#bookingform form {
+    padding: 5%;
+    font-size: 25px;
+    color: var(--main-gold);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.branchlink {
+    text-decoration: none;
+    color: black;
 }
